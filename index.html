@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sample HTML Page</title>
+    <style>
+        :root { --bg:#ffffff; --muted:#6b7280; --accent:#0366d6; }
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#111; background:var(--bg); line-height:1.6; }
+        header, footer { background:#f6f7f9; padding:1rem; text-align:center; }
+        main { max-width:900px; margin:1.25rem auto; padding:0 1rem; }
+        nav a { margin:0 .5rem; color:var(--accent); text-decoration:none; }
+        h1,h2 { margin:.25rem 0; }
+        ul { padding-left:1.25rem; }
+        button { padding:.45rem .75rem; border:1px solid #d1d5db; background:#fff; border-radius:6px; cursor:pointer; }
+        footer p { margin:0; font-size:.9rem; color:var(--muted); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample HTML Page</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>A minimal starter page you can edit and expand. Includes simple structure, responsive viewport, and a small script example.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Responsive layout</li>
+                <li>Semantic HTML</li>
+                <li>Small JavaScript interaction</li>
+            </ul>
+            <button id="msgBtn">Show Message</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Example Corp</p>
+    </footer>
+
+    <script>
+        document.getElementById('msgBtn').addEventListener('click', function () {
+            alert('Hello — this is a simple sample page.');
+        });
+    </script>
+</body>
+</html></section>
