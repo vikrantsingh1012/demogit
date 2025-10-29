@@ -188,9 +188,24 @@
     </footer>
 
     <script>
-        document.getElementById('msgBtn').addEventListener('click', function () {
-            alert('Hello — this is a simple sample page.');
-        });
+        (function(){
+            // add media.html link to the existing nav if it's not already present
+            var nav = document.querySelector('nav');
+            if (nav && !nav.querySelector('a[href="media.html"]')) {
+                var a = document.createElement('a');
+                a.href = 'media.html';
+                a.textContent = 'Media';
+                nav.appendChild(a);
+            }
+
+            // existing button behavior
+            var btn = document.getElementById('msgBtn');
+            if (btn) {
+                btn.addEventListener('click', function () {
+                    alert('Hello — this is a simple sample page.');
+                });
+            }
+        })();
     </script>
 </body>
 </html>
